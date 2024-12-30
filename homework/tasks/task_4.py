@@ -44,7 +44,7 @@ async def coroutines_execution_order(i: int = 42) -> int:
     # return 12212
     await task_1(i)
     # YOUR CODE GOES HERE
-    return int(''.join(str(num) for num in answer))
+    return int(''.join(num for num in answer))
 
 
 async def main() -> None:
